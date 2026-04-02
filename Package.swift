@@ -8,7 +8,7 @@ let package = Package(
     ],
     products: [
         .library(
-            name: "MapplsMap", targets: ["MapplsMapCore"])
+            name: "MapplsMap", targets: ["MapplsMap"])
     ],
     dependencies: [
         
@@ -16,16 +16,8 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "MapplsMap",
-            url: "https://mmi-api-team.s3.amazonaws.com/mappls-sdk-ios/mappls-map/MapplsMap.xcframework-6.1.0.zip",
-            checksum: "bca56f3e5a7b82851dddbfc48326d700aa42d0b99096ee22c17039e8875d3cbf"
-        ),
-        .target(
-            name: "MapplsMapCore",
-            dependencies: [
-                "MapplsMap"
-            ],
-            path: "Sources/MapplsMapCore"
-        ),
-
+            url: "https://mmi-api-team.s3.amazonaws.com/mappls-sdk-ios/mappls-map-move/MapplsMap.xcframework-6.1.5.zip",
+            checksum: "277414d9d4d9d29552656184b228a29dfcbb0efce380370712c04281496e135c"
+        )
     ]
 )
